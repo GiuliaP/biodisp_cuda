@@ -27,48 +27,16 @@ include_directories(${CUDA_INCLUDE_DIRS})
 set(CMAKE_INCLUDE_CURRENT_DIR TRUE)
 
 set(folder_source 
-src/allocate.cpp 
-src/dominance.cpp
-src/initialize.cpp
-src/qsort.cpp
-src/report.cpp
-src/crossover.cpp
-src/eval.cpp
-src/list.cpp
-src/mutation.cpp
-src/selection.cpp
-src/crowd_dist.cpp
-src/mem_manag.cpp
-src/rand.cpp
-src/crowddist.cpp
-src/sort.cpp
-src/display.cpp
-src/fillnds.cpp
-src/merge.cpp
-src/problemdef.cpp
-src/rank.cpp
-src/tourselect.cpp
-src/nsgaII.cpp
-src/merge_cuda.cu
-src/problemdef_cuda.cu
-src/rank_cuda.cu
-src/allocate_cuda.cu
-src/dominance_cuda.cu
-src/initialize_cuda.cu
-src/merge_gpu.cu
-src/qsort_cuda.cu
-src/eval_cuda.cu
-src/mutation_cuda.cu
-src/selection_cuda.cu
-src/fill_cuda.cu
-src/mem_manag_cuda.cu
-src/rand_cuda.cu)
+src/Filters.cpp
+src/Population.cpp
+src/main.cpp
+conv.cu)
 
 set(folder_header
-include/global.h
-include/global_cuda.cuh
-include/rand.h
-include/rand_cuda.cuh)
+include/Filters.h
+include/Population.h
+include/quantities.h
+include/conv_common.h)
 
 source_group("Source Files" FILES ${folder_source})
 source_group("Header Files" FILES ${folder_header})
