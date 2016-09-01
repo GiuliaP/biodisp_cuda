@@ -17,7 +17,7 @@ list(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_30,code=sm_30)
 list(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_35,code=sm_35)
 list(APPEND CUDA_NVCC_FLAGS -gencode arch=compute_50,code=sm_50)
 
-include_directories(${PROJECT_SOURCE_DIR})
+include_directories(${PROJECT_SOURCE_DIR}/include)
 
 include_directories(${OpenCV_INCLUDE_DIRS})
 
@@ -30,13 +30,19 @@ set(folder_source
 src/Filters.cpp
 src/Population.cpp
 src/main.cpp
-conv.cu)
+src/conv.cu)
 
 set(folder_header
 include/Filters.h
 include/Population.h
 include/quantities.h
-include/conv_common.h)
+include/conv_common.h
+include/helper_cuda.h
+include/helper_string.h
+include/helper_functions.h
+include/exception.h
+include/helper_timer.h
+include/helper_image.h)
 
 source_group("Source Files" FILES ${folder_source})
 source_group("Header Files" FILES ${folder_header})
