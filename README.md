@@ -2,7 +2,7 @@
 CUDA implementation of a bio-inspired algorithm for computation of the disparity map.
 
 This is the code implementing the work:<br>
-Graphics processing unit-accelerated techniques for bio-inspired computation in the primary visual cortex, Chessa M. and Pasquale G., Concurrency and Computation: Practice and Experience, 26(10), 2014.
+[Graphics processing unit-accelerated techniques for bio-inspired computation in the primary visual cortex](http://onlinelibrary.wiley.com/doi/10.1002/cpe.3118/abstract), Chessa M. and Pasquale G., Concurrency and Computation: Practice and Experience, 26(10), 2014.
 
 The analysis presented in the paper is the result of the Master Thesis's work that I have performed under the supervision of Prof. [Fabio Solari](https://sites.google.com/site/fabiosolarifs/home) and Dr. [Manuela Chessa](http://www.dibris.unige.it/chessa-manuela).
 <br>
